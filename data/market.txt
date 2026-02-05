@@ -16,4 +16,4 @@
 - Ücret: <:pgmcoin:1469015534493368442> **50 PGM Coin**
 ## <:kit:1469016921478266880> Iron
 - Kod: ``iron``
-- Ücret: <:pgmcoin:1469015534493368442> **50 PGM Coin**
+- Ücret: <:ruby:1469015535911178280> **3 Yakut**

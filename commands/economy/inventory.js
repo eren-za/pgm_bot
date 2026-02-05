@@ -1,7 +1,7 @@
 const { EmbedBuilder } = require("discord.js");
 const { loadJson, saveJson, ensureUser } = require("../../utils/dataManager");
 
-// Emojiler (Senin verdiğin ID'ler)
+// Emojiler
 const EMOJIS = {
     pgmcoin: "<:pgmcoin:1469015534493368442>",
     ruby: "<:ruby:1469015535911178280>",
@@ -15,7 +15,7 @@ const EMOJIS = {
 module.exports = {
     name: "!envanter",
     aliases: ["!inv", "!canta", "!profile", "!e"],
-    description: "Kullanıcının bakiyesini ve kitlerini gösterir.",
+    description: "Kullanıcının bakiyesini ve kitlerini devasa boyutlarda gösterir.",
     execute(client, msg, args) {
         const user = msg.mentions.users.first() || msg.author;
         const data = loadJson("data.json");
@@ -25,39 +25,30 @@ module.exports = {
 
         const p = data[user.id];
 
-        // Kit Listesi Hazırlama
         const kitList = Object.entries(p.kits).length > 0
             ? Object.entries(p.kits)
-                .map(([k, v]) => `${EMOJIS.kit} **${k}** (x${v})`)
+                .map(([k, v]) => `## ${EMOJIS.kit} ${k} (x${v})`)
                 .join("\n")
-            : "_Çantanız boş._";
+            : "### _Çantanız boş._";
 
-        // Cüzdan Listesi Hazırlama (İstediğin Sıralama)
         const walletList = [
-            `${EMOJIS.pgmcoin} **PGM Coin:** ${p.pgmcoin}`,
-            `${EMOJIS.ruby} **Yakut:** ${p.ruby}`,
-            `${EMOJIS.diamond} **Elmas:** ${p.diamond}`,
-            `${EMOJIS.crystal} **Kristal:** ${p.crystal}`
+            `### ${EMOJIS.pgmcoin} PGM Coin: ${p.pgmcoin}`,
+            `### ${EMOJIS.ruby} Yakut: ${p.ruby}`,
+            `### ${EMOJIS.diamond} Elmas: ${p.diamond}`,
+            `### ${EMOJIS.crystal} Kristal: ${p.crystal}`
         ].join("\n");
 
+        const descriptionContent = 
+            `# ${EMOJIS.cuzdan} Cüzdan\n` + 
+            `${walletList}\n\n` + 
+            `# ${EMOJIS.canta} Kitler\n` + 
+            `${kitList}`;
+
         const embed = new EmbedBuilder()
-            .setColor(0x2B2D31) // Koyu Gri
+            .setColor(0x009cff)
             .setAuthor({ name: `${user.username} Envanteri`, iconURL: user.displayAvatarURL() })
             .setThumbnail(user.displayAvatarURL({ dynamic: true }))
-            .addFields(
-                // Bölüm 1: Cüzdan
-                { 
-                    name: `${EMOJIS.cuzdan} Cüzdan`, 
-                    value: walletList, 
-                    inline: false 
-                },
-                // Bölüm 2: Kitler
-                { 
-                    name: `${EMOJIS.canta} Kitler`, 
-                    value: kitList, 
-                    inline: false 
-                }
-            )
+            .setDescription(descriptionContent) // Her şey burada
             .setFooter({ text: "PGM Economy", iconURL: client.user.displayAvatarURL() })
             .setTimestamp();
 
