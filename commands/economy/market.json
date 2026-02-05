@@ -1,26 +1,14 @@
 {
-  "elmas": {
-    "price": 50,
+  "madenci": {
+    "price": 20,
     "currency": "pgmcoin"
   },
-  "altin": {
-    "price": 50,
-    "currency": "pgmcoin"
-  },
-  "okcu": {
-    "price": 50,
-    "currency": "pgmcoin"
-  },
-  "nether": {
-    "price": 50,
-    "currency": "pgmcoin"
-  },
-  "copper": {
-    "price": 50,
-    "currency": "pgmcoin"
-  },
-  "iron": {
-    "price": 3,
+  "nisanci": {
+    "price": 7,
     "currency": "ruby"
+  },
+  "demirci": {
+    "price": 3,
+    "currency": "diamond"
   }
 }
