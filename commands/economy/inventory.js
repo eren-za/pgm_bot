@@ -14,7 +14,7 @@ const EMOJIS = {
 
 module.exports = {
     name: "!envanter",
-    aliases: ["!inv", "!canta", "!profile", "!e"],
+    aliases: ["!inv", "!env", "!e"],
     description: "Kullanıcının bakiyesini ve kitlerini devasa boyutlarda gösterir.",
     execute(client, msg, args) {
         const user = msg.mentions.users.first() || msg.author;

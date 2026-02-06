@@ -2,7 +2,7 @@ const { loadText } = require("../../utils/dataManager");
 
 module.exports = {
     name: "!market",
-    aliases: ["!shop"],
+    aliases: ["!shop", "!m"],
     description: "Marketteki ürünleri listeler.",
     execute(client, msg, args) {
         const content = loadText("market.txt");

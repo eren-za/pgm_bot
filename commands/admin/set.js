@@ -5,7 +5,7 @@ const CURRENCIES = ["pgmcoin", "ruby", "diamond", "crystal"];
 
 module.exports = {
     name: "!set",
-    aliases: ["!ayarla", "!sabitle"],
+    aliases: ["!ayarla"],
     description: "Kullanıcının bakiyesini veya eşyasını direkt ayarlar.",
     execute(client, msg, args) {
         // 1. Yetki Kontrolü
