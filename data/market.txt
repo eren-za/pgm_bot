@@ -1,10 +1,26 @@
-# <:canta:1469018374930698240> KİTLER
-## <:kit:1469016921478266880> Madenci
-- Kod: ``madenci``
-- Ücret: <:pgmcoin:1469015534493368442> **50 PGM Coin**
-## <:kit:1469016921478266880> Nişancı
-- Kod: ``nisanci``
-- Ücret: <:ruby:1469015535911178280> **7 Yakut**
-## <:kit:1469016921478266880> Demirci
-- Kod: ``demirci``
-- Ücret: <:diamond:1469015532836491274> **3 Elmas**
+# <:envanterkasa:1469403053097619578> KASALAR
+## <:bronzkasa:1469400728442245347> Bronz Kasa `bronzkasa`
+- Ücret: <:ruby:1469015535911178280> **1 Yakut**
+- İhtimaller:
+  - <:pgmcoin:1469015534493368442> **PGM Coin**
+  - <:kit:1469016921478266880> **UHC kitleri**
+## <:gumuskasa:1469400730589724828> Gümüş Kasa `gumuskasa`
+- Ücret: <:ruby:1469015535911178280> **3 Yakut**
+- İhtimaller:
+  - <:pgmcoin:1469015534493368442> **PGM Coin**
+  - <:ruby:1469015535911178280> **Yakut**
+  - <:kit:1469016921478266880> **UHC kitleri**
+## <:altinkasakasa:1469400726043361443> Altın Kasa `altinkasa`
+- Ücret: <:ruby:1469015535911178280> **8 Yakut**
+- İhtimaller:
+  - <:pgmcoin:1469015534493368442> **PGM Coin**
+  - <:ruby:1469015535911178280> **Yakut**
+  - <:kit:1469016921478266880> **UHC kitleri**
+
+# <:canta:1469018374930698240> UHC KİTLERİ
+## <:kit:1469016921478266880> Madenci `madenci`
+- Ücret: <:pgmcoin:1469015534493368442> **10 PGM Coin**
+## <:kit:1469016921478266880> Nişancı `nisanci`
+- Ücret: <:pgmcoin:1469015534493368442> **10 PGM Coin**
+## <:kit:1469016921478266880> Demirci `demirci`
+- Ücret: <:pgmcoin:1469015534493368442> **10 PGM Coin**

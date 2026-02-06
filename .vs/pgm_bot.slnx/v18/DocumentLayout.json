@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\baris\\Desktop\\pgm_bot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\inventory.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\inventory.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\loot.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\loot.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\market.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\market.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\kasa.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\kasa.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\buy.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\buy.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\yardim.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\yardim.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\market.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\market.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "market.json",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.json",
-              "RelativeDocumentMoniker": "commands\\economy\\market.json",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.json",
-              "RelativeToolTip": "commands\\economy\\market.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-05T19:30:15.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "market.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.js",
-              "RelativeDocumentMoniker": "commands\\economy\\market.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.js",
-              "RelativeToolTip": "commands\\economy\\market.js",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-05T19:30:13.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "inventory.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\inventory.js",
-              "RelativeDocumentMoniker": "commands\\economy\\inventory.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\inventory.js",
-              "RelativeToolTip": "commands\\economy\\inventory.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-05T19:30:13.088Z",
+              "Title": "loot.json",
+              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\loot.json",
+              "RelativeDocumentMoniker": "data\\loot.json",
+              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\loot.json",
+              "RelativeToolTip": "data\\loot.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-06T20:20:55.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "yardim.txt",
+              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\yardim.txt",
+              "RelativeDocumentMoniker": "data\\yardim.txt",
+              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\yardim.txt",
+              "RelativeToolTip": "data\\yardim.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-06T20:07:19.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "kasa.js",
+              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\kasa.js",
+              "RelativeDocumentMoniker": "commands\\economy\\kasa.js",
+              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\kasa.js",
+              "RelativeToolTip": "commands\\economy\\kasa.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-06T20:01:52.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "buy.js",
               "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\buy.js",
               "RelativeDocumentMoniker": "commands\\economy\\buy.js",
               "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\buy.js",
               "RelativeToolTip": "commands\\economy\\buy.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAkwEAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-05T19:30:05.936Z",
+              "WhenOpened": "2026-02-06T20:00:12.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "market.txt",
+              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.txt",
+              "RelativeDocumentMoniker": "data\\market.txt",
+              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.txt",
+              "RelativeToolTip": "data\\market.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-06T19:13:12.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "market.json",
+              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.json",
+              "RelativeDocumentMoniker": "data\\market.json",
+              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.json",
+              "RelativeToolTip": "data\\market.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-06T19:11:29.803Z",
               "EditorCaption": ""
             }
           ]

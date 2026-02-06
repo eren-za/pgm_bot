@@ -3,8 +3,9 @@
     "",
     "\\assets",
     "\\commands",
-    "\\commands\\economy"
+    "\\commands\\economy",
+    "\\data"
   ],
-  "SelectedNode": "\\commands\\economy\\inventory.js",
+  "SelectedNode": "\\commands\\economy\\kasa.js",
   "PreviewInSolutionExplorer": false
 }

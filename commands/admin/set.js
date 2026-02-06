@@ -5,10 +5,9 @@ const CURRENCIES = ["pgmcoin", "ruby", "diamond", "crystal"];
 
 module.exports = {
     name: "!set",
-    aliases: ["!ayarla"],
-    description: "Kullanıcının bakiyesini veya eşyasını direkt ayarlar.",
+    aliases: ["!ayarla", "!sabitle"],
+    description: "Kullanıcının bakiyesini, kasasını veya eşyasını direkt ayarlar.",
     execute(client, msg, args) {
-        // 1. Yetki Kontrolü
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuild)) {
             return msg.reply("❌ Bu komut için yetkin yok.");
         }
@@ -17,42 +16,54 @@ module.exports = {
         const amount = parseInt(args[1]);
         const target = args[2]?.toLowerCase();
 
-        // 2. Argüman Kontrolü
         if (!user || isNaN(amount) || !target) {
-            return msg.reply("Kullanım: `!set @user <yeni_miktar> <birim_adi>`\nÖrnek: `!set @Baris 5000 pgmcoin` (Direkt 5000 yapar)");
+            return msg.reply("Kullanım: `!set @user <yeni_miktar> <birim_adi/kasa_adi/kit_adi>`");
         }
 
         const data = loadJson("data.json");
         const market = loadJson("market.json");
+        const loot = loadJson("loot.json");
+        
         ensureUser(data, user.id);
 
-        // 3. İŞLEM MANTIĞI
+        // --- A) PARA BİRİMİ ---
         if (CURRENCIES.includes(target)) {
-            // A) Para Birimi Ayarlama (= operatörü)
             data[user.id][target] = amount;
-            
-            // Negatif sayı girildiyse 0 yap
             if (data[user.id][target] < 0) data[user.id][target] = 0;
 
             saveJson("data.json", data);
             msg.reply(`✅ ${user.username} kullanıcısının **${target}** bakiyesi **${amount}** olarak ayarlandı.`);
+        }
+        
+        // --- B) KASA İŞLEMİ (YENİ) ---
+        else if (loot[target]) {
+            if (!data[user.id].crates) data[user.id].crates = {};
 
-        } else {
-            // B) Kit Ayarlama
-            if (!market[target]) {
-                return msg.reply(`❌ **${target}** adında geçerli bir kit bulunamadı!`);
+            if (amount <= 0) {
+                delete data[user.id].crates[target];
+                msg.reply(`✅ ${user.username} kullanıcısının **${target}** kasaları silindi.`);
+            } else {
+                data[user.id].crates[target] = amount;
+                msg.reply(`✅ ${user.username} kullanıcısının **${target}** kasa sayısı **${amount}** adet olarak ayarlandı.`);
             }
+            saveJson("data.json", data);
+        }
 
-            // Eğer 0 veya daha az girildiyse direkt sil, yoksa eşitle
+        // --- C) KİT İŞLEMİ ---
+        else if (market[target]) {
             if (amount <= 0) {
                 delete data[user.id].kits[target];
-                saveJson("data.json", data);
-                msg.reply(`✅ ${user.username} kullanıcısının **${target}** kiti silindi (0landı).`);
+                msg.reply(`✅ ${user.username} kullanıcısının **${target}** kiti silindi.`);
             } else {
                 data[user.id].kits[target] = amount;
-                saveJson("data.json", data);
                 msg.reply(`✅ ${user.username} kullanıcısının **${target}** miktarı **${amount}** adet olarak ayarlandı.`);
             }
+            saveJson("data.json", data);
+        }
+
+        // --- D) HATA ---
+        else {
+            msg.reply(`❌ **${target}** adında geçerli bir para birimi, kasa veya kit bulunamadı!`);
         }
     }
 };
