@@ -1,5 +1,15 @@
-# :blue_book: PGM BOT - Yardım
-- :blue_square: `!envanter` → Envanterini gösterir.
-- :blue_square: `!satinal <kit>` → Kit satın alırsın
-- :blue_square: `!katil <mc_adi> <kit>/yok` → Turnuvaya katılırsın
-- :warning: **Katılım yaptıktan sonra kit envanterinden düşer, bu işlemi geri alamazsın.**
+# :blue_book: PGM BOT • Yardım
+## `!envanter`
+- :blue_square: `!envanter` → Envanterini göster.
+## `!market`
+- :blue_square: `!market` → Marketi görüntüle.
+  - *Kitler ve kasalar için önce markete göz at!*
+## `!satinal` ve `!kasa`
+- :blue_square: `!satinal <kit>` → Kit satın al.
+  - *Kitler tek kullanımlıktır.*
+- :blue_square: `!satinal <kasa>` → Kasa satın al.
+- :blue_square: `!kasa <kasa>` → Envanterindeki kasayı aç.
+## `!katil`
+- :blue_square: `!katil <mc_adi> <kit>` → Turnuvaya katıl. *(kit ile)*
+- :blue_square: `!katil <mc_adi> yok` → Turnuvaya katıl. *(kitsiz)*
+  - ***Katılım yaptıktan sonra kit harcanır, bu işlemi geri alamazsın.***
