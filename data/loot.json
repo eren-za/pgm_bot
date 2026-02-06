@@ -1,33 +1,19 @@
 {
-  "bronzkasa": {
-    "rolls": 1,
-    "pool": [
-      { "type": "currency", "name": "pgmcoin", "min": 50, "max": 150, "weight": 70 },
-      { "type": "currency", "name": "ruby", "min": 1, "max": 2, "weight": 20 },
-      { "type": "kit", "name": "madenci", "amount": 1, "weight": 5 },
-      { "type": "kit", "name": "nisanci", "amount": 1, "weight": 3 },
-      { "type": "kit", "name": "demirci", "amount": 1, "weight": 2 }
-    ]
-  },
-  "gumuskasa": {
-    "rolls": 2,
-    "pool": [
-      { "type": "currency", "name": "pgmcoin", "min": 200, "max": 500, "weight": 50 },
-      { "type": "currency", "name": "ruby", "min": 5, "max": 10, "weight": 35 },
-      { "type": "kit", "name": "madenci", "amount": 1, "weight": 5 },
-      { "type": "kit", "name": "nisanci", "amount": 1, "weight": 5 },
-      { "type": "kit", "name": "demirci", "amount": 1, "weight": 5 }
-    ]
-  },
-  "altinkasa": {
-    "rolls": 3,
-    "pool": [
-      { "type": "currency", "name": "pgmcoin", "min": 1000, "max": 2000, "weight": 40 },
-      { "type": "currency", "name": "ruby", "min": 20, "max": 50, "weight": 40 },
-      { "type": "currency", "name": "diamond", "min": 1, "max": 3, "weight": 5 },
-      { "type": "kit", "name": "madenci", "amount": 1, "weight": 5 },
-      { "type": "kit", "name": "nisanci", "amount": 1, "weight": 5 },
-      { "type": "kit", "name": "demirci", "amount": 1, "weight": 5 }
-    ]
-  }
+  "bronzkasa": [
+    { "type": "currency", "name": "pgmcoin", "min": 2, "max": 5, "chance": 100 },
+    { "type": "currency", "name": "ruby", "min": 1, "max": 2, "chance": 25 },
+    { "type": "random_kit", "min": 1, "max": 1, "chance": 25 }
+  ],
+  "gumuskasa": [
+    { "type": "currency", "name": "pgmcoin", "min": 3, "max": 7, "chance": 100 },
+    { "type": "currency", "name": "ruby", "min": 1, "max": 3, "chance": 33 },
+    { "type": "random_kit", "min": 1, "max": 1, "chance": 33 },
+    { "type": "crate", "name": "bronzkasa", "min": 1, "max": 1, "chance": 33 }
+  ],
+  "altinkasa": [
+    { "type": "currency", "name": "pgmcoin", "min": 5, "max": 15, "chance": 100 },
+    { "type": "currency", "name": "ruby", "min": 2, "max": 3, "chance": 50 },
+    { "type": "random_kit", "min": 1, "max": 1, "chance": 50 },
+    { "type": "crate", "name": "gumuskasa", "min": 1, "max": 1, "chance": 50 }
+  ]
 }

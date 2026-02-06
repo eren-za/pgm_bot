@@ -3,9 +3,10 @@
     "",
     "\\assets",
     "\\commands",
+    "\\commands\\admin",
     "\\commands\\economy",
     "\\data"
   ],
-  "SelectedNode": "\\commands\\economy\\kasa.js",
+  "SelectedNode": "\\commands\\admin\\set.js",
   "PreviewInSolutionExplorer": false
 }

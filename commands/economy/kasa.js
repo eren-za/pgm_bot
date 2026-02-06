@@ -16,88 +16,100 @@ const DISPLAY_NAMES = {
     pgmcoin: "PGM Coin",
     ruby: "Yakut",
     diamond: "Elmas",
-    crystal: "Kristal"
+    crystal: "Kristal",
+    bronzkasa: "Bronz Kasa",
+    gumuskasa: "Gümüş Kasa",
+    altinkasa: "Altın Kasa"
 };
 
-function formatName(type, name) {
-    if (type === "currency") return DISPLAY_NAMES[name] || name.toUpperCase();
-    return name.charAt(0).toUpperCase() + name.slice(1);
-}
+// Çıkabilecek Kitler Listesi
+const AVAILABLE_KITS = ["madenci", "nisanci", "demirci"];
 
-function pickWeighted(pool) {
-    const totalWeight = pool.reduce((sum, item) => sum + item.weight, 0);
-    let randomNum = Math.random() * totalWeight;
-    for (const item of pool) {
-        if (randomNum < item.weight) return item;
-        randomNum -= item.weight;
-    }
-    return pool[0];
+function formatName(name) {
+    return DISPLAY_NAMES[name] || name.charAt(0).toUpperCase() + name.slice(1);
 }
 
 module.exports = {
     name: "!kasa",
     aliases: ["!open", "!kasaac"],
-    description: "Envanterindeki kasayı açar (Eşyalar birleştirilir).",
+    description: "Envanterindeki kasayı açar (Şansına göre kasa bile çıkabilir!).",
     execute(client, msg, args) {
         const crateType = args[0]?.toLowerCase();
-        if (!crateType || !EMOJIS[crateType]) return msg.reply("Kullanım: `!kasa <kasa_adi>`");
+
+        if (!crateType || !EMOJIS[crateType]) {
+            return msg.reply("Kullanım: `!kasa <bronzkasa/gumuskasa/altinkasa>`");
+        }
 
         const data = loadJson("data.json");
-        const lootConfig = loadJson("loot.json");
+        const lootTable = loadJson("loot.json");
+        
         ensureUser(data, msg.author.id);
 
         const userCrates = data[msg.author.id].crates;
+
+        // 1. Kasa Kontrolü
         if (!userCrates[crateType] || userCrates[crateType] <= 0) {
             return msg.reply(`❌ Envanterinde hiç **${EMOJIS[crateType]} ${crateType}** yok!`);
         }
 
-        const crateData = lootConfig[crateType];
-        if (!crateData) return msg.reply("❌ Ganimet tablosu bulunamadı.");
+        // 2. Loot Tablosu Kontrolü
+        const possibleLoot = lootTable[crateType];
+        if (!possibleLoot) {
+            return msg.reply("❌ Bu kasa için ganimet ayarları bulunamadı.");
+        }
 
-        // Kasayı düş
+        // --- KASA AÇMA İŞLEMİ ---
+        
+        // Kasayı envanterden düş
         data[msg.author.id].crates[crateType] -= 1;
         if (data[msg.author.id].crates[crateType] <= 0) delete data[msg.author.id].crates[crateType];
 
-        let rollResults = {}; // Sonuçları burada toplayacağız
+        let rewards = [];
 
-        let rollCount = crateData.rolls || 1;
+        // Tablodaki her bir ihtimali tek tek kontrol et
+        possibleLoot.forEach(item => {
+            // Şans Faktörü (0-100)
+            const roll = Math.random() * 100;
 
-        // Ödülleri Belirle
-        for (let i = 0; i < rollCount; i++) {
-            const drop = pickWeighted(crateData.pool);
-            const key = `${drop.type}_${drop.name}`;
+            if (roll <= item.chance) {
+                // Miktarı belirle (min-max arası)
+                const amount = Math.floor(Math.random() * (item.max - item.min + 1)) + item.min;
 
-            if (!rollResults[key]) {
-                rollResults[key] = { ...drop, totalAmount: 0 };
+                // --- A) PARA BİRİMİ ---
+                if (item.type === "currency") {
+                    data[msg.author.id][item.name] = (data[msg.author.id][item.name] || 0) + amount;
+                    
+                    const emoji = EMOJIS[item.name] || "💰";
+                    rewards.push(`## ${emoji} +${amount} ${formatName(item.name)}`);
+                } 
+                // --- B) RASTGELE KİT ---
+                else if (item.type === "random_kit") {
+                    const randomKitName = AVAILABLE_KITS[Math.floor(Math.random() * AVAILABLE_KITS.length)];
+                    
+                    if (!data[msg.author.id].kits) data[msg.author.id].kits = {};
+                    data[msg.author.id].kits[randomKitName] = (data[msg.author.id].kits[randomKitName] || 0) + amount;
+
+                    rewards.push(`## ${EMOJIS.kit} +${amount} ${formatName(randomKitName)} Kiti`);
+                }
+                // --- C) KASA İÇİNDEN KASA (YENİ EKLENDİ) ---
+                else if (item.type === "crate") {
+                    if (!data[msg.author.id].crates) data[msg.author.id].crates = {};
+                    
+                    data[msg.author.id].crates[item.name] = (data[msg.author.id].crates[item.name] || 0) + amount;
+                    
+                    const emoji = EMOJIS[item.name] || "📦";
+                    rewards.push(`## ${emoji} +${amount} ${formatName(item.name)}`);
+                }
             }
-
-            if (drop.type === "currency") {
-                const amount = Math.floor(Math.random() * (drop.max - drop.min + 1)) + drop.min;
-                rollResults[key].totalAmount += amount;
-            } else if (drop.type === "kit") {
-                rollResults[key].totalAmount += (drop.amount || 1);
-            }
-        }
-
-        // Veritabanına işle ve mesaj hazırla
-        let rewardLines = [];
-        for (const key in rollResults) {
-            const res = rollResults[key];
-            if (res.type === "currency") {
-                data[msg.author.id][res.name] += res.totalAmount;
-                rewardLines.push(`## ${EMOJIS[res.name] || "💰"} +${res.totalAmount} ${formatName(res.type, res.name)}`);
-            } else if (res.type === "kit") {
-                data[msg.author.id].kits[res.name] = (data[msg.author.id].kits[res.name] || 0) + res.totalAmount;
-                rewardLines.push(`## ${EMOJIS.kit} +${res.totalAmount} ${formatName(res.type, res.name)} Kiti`);
-            }
-        }
+        });
 
         saveJson("data.json", data);
 
+        // --- SONUÇ MESAJI ---
         const embed = new EmbedBuilder()
             .setColor(0xF1C40F)
             .setTitle(`${EMOJIS[crateType]} Kasa Açıldı!`)
-            .setDescription(`**${msg.author.username}** kasayı açtı! İşte çıkanlar:\n\n` + rewardLines.join("\n"))
+            .setDescription(`**${msg.author.username}** kasayı açtı! İşte çıkanlar:\n\n` + rewards.join("\n"))
             .setFooter({ text: "PGM Loot System", iconURL: client.user.displayAvatarURL() })
             .setTimestamp();
 
