@@ -13,7 +13,7 @@ const COOLDOWN = 24 * 60 * 60 * 1000;
 
 module.exports = {
     name: "!daily",
-    aliases: ["!gunluk""],
+    aliases: ["!gunluk"],
     description: "Günlük rastgele ödülünü toplarsın (24 saatte bir).",
     execute(client, msg, args) {
         const user = msg.author;
