@@ -1,5 +1,7 @@
 const { PermissionFlagsBits } = require("discord.js");
 const { loadJson, saveJson, ensureUser } = require("../../utils/dataManager");
+// Bu fonksiyonu utils içine eklediğini varsayıyorum, eğer yoksa aşağıya manuel halini de ekleyebiliriz
+const { getLang } = require("../../utils/formatter"); 
 
 const CURRENCIES = ["pgmcoin", "ruby", "diamond", "crystal"];
 
@@ -8,8 +10,12 @@ module.exports = {
     aliases: ["!ekle", "!ver"],
     description: "Kullanıcılara veya tüm sunucuya ekleme yapar.",
     async execute(client, msg, args) {
+        // Emojiler (Hızlı erişim için)
+        const langCheck = "<:check:1469662282278764638>";
+        const langNegative = "<:negativecheck:1469662284224925727>";
+
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuild)) {
-            return msg.reply("❌ Bu komut için yetkin yok.");
+            return msg.reply(`${langNegative} Bu komut için yetkin yok.`);
         }
 
         const isEveryone = msg.mentions.everyone || args[0] === "@everyone" || args[0] === "everyone";
@@ -18,15 +24,17 @@ module.exports = {
         const target = args[2]?.toLowerCase();
 
         if ((!user && !isEveryone) || isNaN(amount) || !target) {
-            return msg.reply("Kullanım: `!add @user/<@everyone> <miktar> <birim>`");
+            return msg.reply(`${langNegative} **Doğru Kullanım:** \`!add @user/everyone <miktar> <birim>\``);
         }
 
         const data = loadJson("data.json");
         const market = loadJson("market.json");
         const loot = loadJson("loot.json");
 
-        let targetIds = [];
+        // Sözlükten bilgileri çek
+        const targetInfo = getLang(target);
 
+        let targetIds = [];
         if (isEveryone) {
             const members = await msg.guild.members.fetch();
             targetIds = members.filter(m => !m.user.bot).map(m => m.user.id);
@@ -40,7 +48,7 @@ module.exports = {
         }
 
         if (!isValidTarget) {
-            return msg.reply(`❌ **${target}** adında geçerli bir para birimi, kasa veya kit bulunamadı!`);
+            return msg.reply(`${langNegative} **${target}** adında geçerli bir birim bulunamadı!`);
         }
 
         targetIds.forEach(id => {
@@ -63,6 +71,11 @@ module.exports = {
         });
 
         saveJson("data.json", data);
-        msg.reply(`✅ **${isEveryone ? "Sunucudaki Tüm Üyelere" : user.username}** için işlem başarıyla uygulandı.`);
+
+        const targetDisplayName = isEveryone ? "@everyone" : `**${user.username}**`;
+        const actionText = amount >= 0 ? "eklendi" : "çıkarıldı";
+        
+        // Örn: ✅ @everyone için 100 <:ruby:ID> Yakut eklendi.
+        msg.reply(`${langCheck} ${targetDisplayName} için **${Math.abs(amount)}** ${targetInfo.emoji} **${targetInfo.name}** ${actionText}.`);
     }
 };

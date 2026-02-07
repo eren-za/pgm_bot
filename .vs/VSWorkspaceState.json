@@ -5,8 +5,11 @@
     "\\commands",
     "\\commands\\admin",
     "\\commands\\economy",
-    "\\data"
+    "\\commands\\general",
+    "\\commands\\tournament",
+    "\\data",
+    "\\utils"
   ],
-  "SelectedNode": "\\commands\\economy\\inventory.js",
+  "SelectedNode": "\\commands\\tournament\\participants.js",
   "PreviewInSolutionExplorer": false
 }

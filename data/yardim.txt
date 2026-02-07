@@ -1,23 +1,20 @@
-# :blue_book: PGM BOT • Yardım
-## `!envanter`
+## :blue_book: PGM BOT • Yardım
+## Genel Komutlar
 - :blue_square: `!envanter` → Envanterini göster.
-## `!market`
 - :blue_square: `!market` → Marketi görüntüle.
   - ***Kitler ve kasalar için önce markete göz at!***
-## `!satinal`
 - :blue_square: `!satinal <kit>` → Kit satın al.
-   - ***!satinal nisanci***
+  - ***!satinal nisanci***
   - *Kitler tek kullanımlıktır.*
-## `!gonder`
 - :blue_square: `!gonder <@kullanici> <miktar> <oge>` → Herhangi birine birim gönder.
   - *PGM Coin, yakut, kasa veya kit gönderebilirsin.*
   - ***!gonder <@1088510460778782831> 100 pgmcoin***
-## `!kasa`
+## Kasa Komutları
 - :blue_square: `!satinal <kasa>` → Kasa satın al.
   - ***!satinal gumuskasa***
 - :blue_square: `!kasa <kasa>` → Envanterindeki kasayı aç.
   - ***!kasa gumuskasa***
-## `!katil`
+## Turnuva Komutları
 - :blue_square: `!katil <mc_adi> <kit>` → Turnuvaya katıl. *(kit ile)*
   - ***!katil BayPGM nisanci***
 - :blue_square: `!katil <mc_adi> yok` → Turnuvaya katıl. *(kitsiz)*

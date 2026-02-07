@@ -1,14 +1,18 @@
 const { loadJson, saveJson, ensureUser } = require("../../utils/dataManager");
+const { getLang } = require("../../utils/formatter");
 
 module.exports = {
     name: "!katil",
-    description: "Turnuvaya katılım sağlar.",
+    aliases: ["!join"],
     execute(client, msg, args) {
+        const check = getLang("check").emoji;
+        const negative = getLang("negative").emoji;
+
         const mcName = args[0];
         const kitChoice = args[1]?.toLowerCase();
 
         if (!mcName || !kitChoice) {
-            return msg.reply("Kullanım: `!katil <mc_adi> <kit>` veya `!katil <mc_adi> yok`");
+            return msg.reply(`${negative} Kullanım: \`!katil <mc_adi> <kit_adi>\` veya \`!katil <mc_adi> yok\``);
         }
 
         const data = loadJson("data.json");
@@ -16,19 +20,20 @@ module.exports = {
         ensureUser(data, msg.author.id);
 
         if (pData.players && pData.players[mcName]) {
-            return msg.reply(`❌ **${mcName}** zaten turnuvaya katılmış!`);
+            return msg.reply(`${negative} **${mcName}** zaten turnuvaya katılmış!`);
         }
 
         if (kitChoice === "yok") {
             pData.players[mcName] = "Kitsiz";
         } else {
-            if (!data[msg.author.id].kits[kitChoice]) {
-                return msg.reply(`❌ Envanterinde **${kitChoice}** kiti bulunmuyor.`);
-            }
-            data[msg.author.id].kits[kitChoice] -= 1;
+            const kitInfo = getLang(kitChoice);
             
-            // Kit sayısı 0 ise listeden sil
-            if (data[msg.author.id].kits[kitChoice] === 0) {
+            if (!data[msg.author.id].kits || !data[msg.author.id].kits[kitChoice]) {
+                return msg.reply(`${negative} Envanterinde **${kitInfo.emoji} ${kitInfo.name}** kiti bulunmuyor.`);
+            }
+
+            data[msg.author.id].kits[kitChoice] -= 1;
+            if (data[msg.author.id].kits[kitChoice] <= 0) {
                 delete data[msg.author.id].kits[kitChoice];
             }
             
@@ -37,6 +42,8 @@ module.exports = {
 
         saveJson("data.json", data);
         saveJson("participants.json", pData);
-        msg.reply(`✅ **${mcName}** turnuvaya **${kitChoice === "yok" ? "Kitsiz" : kitChoice}** olarak katıldı.`);
+
+        const finalKitInfo = kitChoice === "yok" ? { name: "Kitsiz", emoji: "🛡️" } : getLang(kitChoice);
+        msg.reply(`${check} **${mcName}** turnuvaya **${finalKitInfo.emoji} ${finalKitInfo.name}** olarak katıldı.`);
     }
 };

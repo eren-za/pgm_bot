@@ -1,25 +1,24 @@
 {
   "1088510460778782831": {
-    "pgmcoin": 8,
+    "pgmcoin": 21312317,
+    "ruby": 3,
+    "diamond": 0,
+    "crystal": 0,
+    "kits": {},
+    "crates": {
+      "bronzkasa": 4
+    },
+    "lastDaily": 1770468019683
+  },
+  "540610265084067851": {
+    "pgmcoin": 5,
     "ruby": 2,
     "diamond": 0,
     "crystal": 0,
-    "kits": {
-      "madenci": 500
-    },
+    "kits": {},
     "crates": {
-      "altinkasa": 3
-    },
-    "lastDaily": 1770412197146
-  },
-  "540610265084067851": {
-    "pgmcoin": 0,
-    "ruby": 0,
-    "diamond": 0,
-    "crystal": 0,
-    "kits": {
-      "nisanci": 1
-    },
-    "crates": {}
+      "altinkasa": 19,
+      "gumuskasa": 3
+    }
   }
 }

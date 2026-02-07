@@ -11,6 +11,6 @@ module.exports = {
             .map(([name, kit]) => `• **${name}**: ${kit}`)
             .join("\n") || "Henüz katılım yok.";
         
-        msg.channel.send(`**🏆 Turnuva Katılımcıları**\n${list}`);
+        msg.channel.send(`**Turnuva Katılımcıları**\n${list}`);
     }
 };
