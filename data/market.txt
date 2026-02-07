@@ -2,17 +2,17 @@
 
 ###  <:envanterkasa:1469403053097619578> KASALAR `!satinal <kasa>`
  
-- <:bronzkasa:1469400728442245347> Bronz Kasa `bronzkasa` → <:ruby:1469015535911178280> 3 Zümrüt
-- Kasa İçeriği:
-  - <:pgmcoin:1469015534493368442> PGM Coin, <:kit:1469016921478266880> UHC kitleri
+## <:bronzkasa:1469400728442245347> **Bronz Kasa `bronzkasa` → <:ruby:1469015535911178280> 3 Zümrüt**
+⤷ Kasa İçeriği:
+<:pgmcoin:1469015534493368442> PGM Coin, <:kit:1469016921478266880> UHC kitleri
 
-- <:gumuskasa:1469400730589724828> Gümüş Kasa `gumuskasa` → <:ruby:1469015535911178280> 6 Zümrüt
-- Kasa İçeriği:
-  - <:pgmcoin:1469015534493368442> PGM Coin, <:ruby:1469015535911178280> Yakut, <:kit:1469016921478266880> UHC kitleri, <:bronzkasa:1469400728442245347> Bronz Kasa
+## <:gumuskasa:1469400730589724828> Gümüş Kasa `gumuskasa` → <:ruby:1469015535911178280> 6 Zümrüt
+⤷ Kasa İçeriği:
+<:pgmcoin:1469015534493368442> PGM Coin, <:ruby:1469015535911178280> Yakut, <:kit:1469016921478266880> UHC kitleri, <:bronzkasa:1469400728442245347> Bronz Kasa
 
-- <:altinkasakasa:1469400726043361443> Altın Kasa `altinkasa` → <:ruby:1469015535911178280> 9 Zümrüt
-- Kasa İçeriği:
-  - <:pgmcoin:1469015534493368442> PGM Coin, <:ruby:1469015535911178280> Yakut, <:kit:1469016921478266880> UHC kitleri, <:gumuskasa:1469400730589724828> Gümüş Kasa
+## <:altinkasakasa:1469400726043361443> Altın Kasa `altinkasa` → <:ruby:1469015535911178280> 9 Zümrüt
+⤷ Kasa İçeriği:
+<:pgmcoin:1469015534493368442> PGM Coin, <:ruby:1469015535911178280> Yakut, <:kit:1469016921478266880> UHC kitleri, <:gumuskasa:1469400730589724828> Gümüş Kasa
 
 ### <:canta:1469018374930698240> TURNUVA KİTLERİ `!satinal <kit>`
 <:kit:1469016921478266880> Madenci `madenci` • <:pgmcoin:1469015534493368442> 20 PGM Coin

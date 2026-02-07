@@ -1,21 +1,21 @@
-## :blue_book: PGM BOT • Yardım
+## :blue_book: PGM Bot Yardım • Eros UI Deluxe
 ## Genel Komutlar
-- :blue_square: `!envanter` → Envanterini göster.
-- :blue_square: `!market` → Marketi görüntüle.
-  - ***Kitler ve kasalar için önce markete göz at!***
-- :blue_square: `!satinal <kit>` → Kit satın al.
-  - ***!satinal nisanci***
-  - *Kitler tek kullanımlıktır.*
-- :blue_square: `!gonder <@kullanici> <miktar> <oge>` → Herhangi birine birim gönder.
-  - *PGM Coin, yakut, kasa veya kit gönderebilirsin.*
-  - ***!gonder <@1088510460778782831> 100 pgmcoin***
+`!envanter` → Envanterini göster.
+`!market` → Marketi görüntüle.
+`!satinal <eşya>` → istediğini satın al.
+`!gonder <@kullanici> <miktar> <oge>` → Herhangi birine birim gönder.
+⤷ *PGM Coin, yakut, kasa veya kit gönderebilirsin.*
+`!gunluk` → Günlük Ödülünü al! ✨
+## Diğer Komutlar
+`!top` → Liderlik tablosunu gösterir.
+`!bilgi` → PGM ve Bot hakkında bilgileri gösterir.
+`!profil` → Kişinin PGM Profilini gösterir.
 ## Kasa Komutları
-- :blue_square: `!satinal <kasa>` → Kasa satın al.
-  - ***!satinal gumuskasa***
-- :blue_square: `!kasa <kasa>` → Envanterindeki kasayı aç.
-  - ***!kasa gumuskasa***
+`!satinal <kasa>` → Kasa satın al.
+`!kasa <kasa>` → Envanterindeki kasayı aç.
+- ***!kasa gumuskasa***
 ## Turnuva Komutları
-- :blue_square: `!katil <mc_adi> <kit>` → Turnuvaya katıl. *(kit ile)*
-  - ***!katil BayPGM nisanci***
-- :blue_square: `!katil <mc_adi> yok` → Turnuvaya katıl. *(kitsiz)*
-  - ***Katılım yaptıktan sonra kit harcanır, bu işlemi geri alamazsın.***
+`!katil <mc_adi> <kit>` → Turnuvaya katıl. *(kit ile)*
+⤷ *!katil BayPGM nisanci*
+`!katil <mc_adi> yok` → Turnuvaya katıl. *(kitsiz)*
+⤷ *Katılım yaptıktan sonra kit harcanır, bu işlemi geri alamazsın.*

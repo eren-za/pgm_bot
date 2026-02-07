@@ -11,14 +11,18 @@
     "lastDaily": 1770468019683
   },
   "540610265084067851": {
-    "pgmcoin": 12,
-    "ruby": 4,
+    "pgmcoin": 60,
+    "ruby": 9,
     "diamond": 0,
     "crystal": 0,
-    "kits": {},
+    "kits": {
+      "demirci": 1,
+      "madenci": 1,
+      "nisanci": 1
+    },
     "crates": {
-      "altinkasa": 18,
-      "gumuskasa": 3
+      "altinkasa": 13,
+      "gumuskasa": 7
     }
   }
 }
