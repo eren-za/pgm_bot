@@ -3,7 +3,7 @@ const { getLang } = require("../../utils/formatter");
 
 module.exports = {
     name: "!katil",
-    aliases: ["!join"],
+    aliases: ["!join","!kayit"],
     execute(client, msg, args) {
         const check = getLang("check").emoji;
         const negative = getLang("negative").emoji;

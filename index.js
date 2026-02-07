@@ -39,7 +39,7 @@ for (const folder of commandFolders) {
 client.on("clientReady", () => {
     console.log(`✅ Bot giriş yaptı: ${client.user.tag}`);
     client.user.setPresence({
-        activities: [{ name: '"!yardim" kullan! • PGM BOT', type: ActivityType.Custom }],
+        activities: [{ name: 'Eros UI🩸', type: ActivityType.Custom }],
         status: 'online',
     });
 });
