@@ -23,8 +23,8 @@ module.exports = {
 
         const userCrates = data[msg.author.id].crates;
 
-        if (!userCrates[crateType] || userCrates[crateType] <= 0) {
-            return msg.reply(`${negative} Envanterinde hiç **${info.emoji} ${info.name}** yok!`);
+        if (!userCrates || !userCrates[crateType] || userCrates[crateType] <= 0) {
+            return msg.reply(`${negative} Envanterinde hiç **${info.emoji} ${info.name}** yok! Kasa almak için \`!market\``);
         }
 
         const possibleLoot = lootTable[crateType];
