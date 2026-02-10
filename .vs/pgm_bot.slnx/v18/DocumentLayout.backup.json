@@ -3,100 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\baris\\Desktop\\pgm_bot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\utils\\formatter.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:utils\\formatter.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\participants.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\participants.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\tournament\\participants.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\tournament\\participants.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\tournament\\join.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\tournament\\join.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\bilgi.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\general\\bilgi.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\send.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\send.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\market.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\kasa.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\kasa.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\inventory.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\inventory.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\daily.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\daily.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\buy.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\buy.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\admin\\add.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\admin\\add.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\lang.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\lang.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\sorgu.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\general\\sorgu.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\profil.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\general\\profil.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\ping.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\general\\ping.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\help.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\general\\help.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\admin\\set.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\admin\\set.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\data.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\data.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\daily_loot.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\daily_loot.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\utils\\dataManager.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:utils\\dataManager.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\loot.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\loot.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\yardim.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\yardim.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\market.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\loot.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\loot.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\inventory.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:commands\\economy\\inventory.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\lang.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\lang.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\baris\\Desktop\\pgm_bot\\data\\participants.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\participants.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,132 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "participants.json",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\participants.json",
-              "RelativeDocumentMoniker": "data\\participants.json",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\participants.json",
-              "RelativeToolTip": "data\\participants.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-07T13:27:16.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "lang.json",
               "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\lang.json",
               "RelativeDocumentMoniker": "data\\lang.json",
               "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\lang.json",
               "RelativeToolTip": "data\\lang.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-07T12:58:13.013Z"
+              "WhenOpened": "2026-02-10T13:39:19.461Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "join.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\tournament\\join.js",
-              "RelativeDocumentMoniker": "commands\\tournament\\join.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\tournament\\join.js",
-              "RelativeToolTip": "commands\\tournament\\join.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:56:50.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "sorgu.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\sorgu.js",
-              "RelativeDocumentMoniker": "commands\\general\\sorgu.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\sorgu.js",
-              "RelativeToolTip": "commands\\general\\sorgu.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:56:46.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "profil.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\profil.js",
-              "RelativeDocumentMoniker": "commands\\general\\profil.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\profil.js",
-              "RelativeToolTip": "commands\\general\\profil.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:56:42.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ping.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\ping.js",
-              "RelativeDocumentMoniker": "commands\\general\\ping.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\ping.js",
-              "RelativeToolTip": "commands\\general\\ping.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:56:40.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "help.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\help.js",
-              "RelativeDocumentMoniker": "commands\\general\\help.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\help.js",
-              "RelativeToolTip": "commands\\general\\help.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:56:38.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "bilgi.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\bilgi.js",
-              "RelativeDocumentMoniker": "commands\\general\\bilgi.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\general\\bilgi.js",
-              "RelativeToolTip": "commands\\general\\bilgi.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:56:35.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "send.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\send.js",
-              "RelativeDocumentMoniker": "commands\\economy\\send.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\send.js",
-              "RelativeToolTip": "commands\\economy\\send.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:54:38.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "market.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.js",
-              "RelativeDocumentMoniker": "commands\\economy\\market.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\market.js",
-              "RelativeToolTip": "commands\\economy\\market.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:54:35.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "inventory.js",
               "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\inventory.js",
               "RelativeDocumentMoniker": "commands\\economy\\inventory.js",
@@ -239,164 +59,60 @@
               "RelativeToolTip": "commands\\economy\\inventory.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:53:31.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "set.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\admin\\set.js",
-              "RelativeDocumentMoniker": "commands\\admin\\set.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\admin\\set.js",
-              "RelativeToolTip": "commands\\admin\\set.js",
-              "ViewState": "AgIAABcAAAAAAAAAAAAkwD8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:41:27.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "add.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\admin\\add.js",
-              "RelativeDocumentMoniker": "commands\\admin\\add.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\admin\\add.js",
-              "RelativeToolTip": "commands\\admin\\add.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:40:34.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "formatter.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\utils\\formatter.js",
-              "RelativeDocumentMoniker": "utils\\formatter.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\utils\\formatter.js",
-              "RelativeToolTip": "utils\\formatter.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:51:35.382Z",
+              "WhenOpened": "2026-02-10T13:39:05.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "participants.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\tournament\\participants.js",
-              "RelativeDocumentMoniker": "commands\\tournament\\participants.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\tournament\\participants.js",
-              "RelativeToolTip": "commands\\tournament\\participants.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T13:26:28.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "buy.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\buy.js",
-              "RelativeDocumentMoniker": "commands\\economy\\buy.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\buy.js",
-              "RelativeToolTip": "commands\\economy\\buy.js",
-              "ViewState": "AgIAABMAAAAAAAAAAAAUwCcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T11:54:16.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "daily.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\daily.js",
-              "RelativeDocumentMoniker": "commands\\economy\\daily.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\daily.js",
-              "RelativeToolTip": "commands\\economy\\daily.js",
-              "ViewState": "AgIAABgAAAAAAAAAAAAkwC8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:11:45.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "kasa.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\kasa.js",
-              "RelativeDocumentMoniker": "commands\\economy\\kasa.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\commands\\economy\\kasa.js",
-              "RelativeToolTip": "commands\\economy\\kasa.js",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwDsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:32:59.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "data.json",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\data.json",
-              "RelativeDocumentMoniker": "data\\data.json",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\data.json",
-              "RelativeToolTip": "data\\data.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-07T12:38:23.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "dataManager.js",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\utils\\dataManager.js",
-              "RelativeDocumentMoniker": "utils\\dataManager.js",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\utils\\dataManager.js",
-              "RelativeToolTip": "utils\\dataManager.js",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwDIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-07T12:37:18.392Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "loot.json",
               "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\loot.json",
               "RelativeDocumentMoniker": "data\\loot.json",
               "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\loot.json",
               "RelativeToolTip": "data\\loot.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-07T12:21:06.864Z"
+              "WhenOpened": "2026-02-10T13:22:09.442Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "daily_loot.json",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\daily_loot.json",
-              "RelativeDocumentMoniker": "data\\daily_loot.json",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\daily_loot.json",
-              "RelativeToolTip": "data\\daily_loot.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-07T12:14:23.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "yardim.txt",
-              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\yardim.txt",
-              "RelativeDocumentMoniker": "data\\yardim.txt",
-              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\yardim.txt",
-              "RelativeToolTip": "data\\yardim.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-02-07T11:55:25.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 1,
               "Title": "market.txt",
               "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.txt",
               "RelativeDocumentMoniker": "data\\market.txt",
               "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\market.txt",
               "RelativeToolTip": "data\\market.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-02-07T11:55:22.501Z"
+              "WhenOpened": "2026-02-10T13:12:15.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "yardim.txt",
+              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\yardim.txt",
+              "RelativeDocumentMoniker": "data\\yardim.txt",
+              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\yardim.txt",
+              "RelativeToolTip": "data\\yardim.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-10T13:12:00.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "participants.json",
+              "DocumentMoniker": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\participants.json",
+              "RelativeDocumentMoniker": "data\\participants.json",
+              "ToolTip": "C:\\Users\\baris\\Desktop\\pgm_bot\\data\\participants.json",
+              "RelativeToolTip": "data\\participants.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-10T13:11:58.992Z",
+              "EditorCaption": ""
             }
           ]
         }

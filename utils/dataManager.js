@@ -42,20 +42,17 @@ function ensureUser(data, userId) {
     if (!data[userId]) {
         data[userId] = {
             pgmcoin: 0,
-            ruby: 0,
-            diamond: 0,
-            crystal: 0,
+            cevher: 0,
+            elmas: 0,
             kits: {},
-            crates: {} // Yeni Kasa Kategorisi
+            crates: {}
         };
     } else {
-        // Eski verileri tamamlama (Migration)
         if (data[userId].pgmcoin === undefined) data[userId].pgmcoin = 0;
-        if (data[userId].ruby === undefined) data[userId].ruby = 0;
-        if (data[userId].diamond === undefined) data[userId].diamond = 0;
-        if (data[userId].crystal === undefined) data[userId].crystal = 0;
+        if (data[userId].cevher === undefined) data[userId].cevher = 0;
+        if (data[userId].elmas === undefined) data[userId].elmas = 0;
         if (!data[userId].kits) data[userId].kits = {};
-        if (!data[userId].crates) data[userId].crates = {}; // Kasalar yoksa ekle
+        if (!data[userId].crates) data[userId].crates = {};
     }
     return data;
 }
