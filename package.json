@@ -1,17 +1,18 @@
 {
   "name": "pgmbot",
-  "version": "1.0.0",
+  "version": "0.37.2",
   "description": "PGM ekonomi ve turnuva botu",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=25.6.0"
   },
   "dependencies": {
     "discord.js": "^14.25.1",
-    "dotenv": "^16.6.1"
+    "dotenv": "^16.4.7"
   }
 }

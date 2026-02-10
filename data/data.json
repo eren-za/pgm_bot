@@ -3,10 +3,15 @@
     "pgmcoin": 99999999,
     "cevher": 99999999,
     "elmas": 99999999,
-    "kits": {},
-    "crates": {},
-    "ruby": 0,
-    "diamond": 0,
-    "crystal": 0
+    "kits": {
+      "madenci": 99999999,
+      "demirci": 99999999,
+      "nisanci": 99999999
+    },
+    "crates": {
+      "bronz": 99999999,
+      "altin": 99999999,
+      "gumus": 99999999
+    }
   }
 }
