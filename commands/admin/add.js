@@ -1,16 +1,14 @@
 const { PermissionFlagsBits } = require("discord.js");
 const { loadJson, saveJson, ensureUser } = require("../../utils/dataManager");
-// Bu fonksiyonu utils içine eklediğini varsayıyorum, eğer yoksa aşağıya manuel halini de ekleyebiliriz
 const { getLang } = require("../../utils/formatter"); 
 
-const CURRENCIES = ["pgmcoin", "ruby", "diamond", "crystal"];
+const CURRENCIES = ["pgmcoin", "gem", "diamond", "crystal"];
 
 module.exports = {
     name: "!add",
     aliases: ["!ekle", "!ver"],
     description: "Kullanıcılara veya tüm sunucuya ekleme yapar.",
     async execute(client, msg, args) {
-        // Emojiler (Hızlı erişim için)
         const langCheck = "<:check:1469662282278764638>";
         const langNegative = "<:negativecheck:1469662284224925727>";
 
@@ -31,7 +29,6 @@ module.exports = {
         const market = loadJson("market.json");
         const loot = loadJson("loot.json");
 
-        // Sözlükten bilgileri çek
         const targetInfo = getLang(target);
 
         let targetIds = [];
@@ -75,7 +72,6 @@ module.exports = {
         const targetDisplayName = isEveryone ? "@everyone" : `**${user.username}**`;
         const actionText = amount >= 0 ? "eklendi" : "çıkarıldı";
         
-        // Örn: ✅ @everyone için 100 <:ruby:ID> Yakut eklendi.
         msg.reply(`${langCheck} ${targetDisplayName} için **${Math.abs(amount)}** ${targetInfo.emoji} **${targetInfo.name}** ${actionText}.`);
     }
 };

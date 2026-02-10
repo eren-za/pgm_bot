@@ -16,17 +16,17 @@
   },
   "bronzkasa": {
     "price": 3,
-    "currency": "ruby",
+    "currency": "gem",
     "type": "crate"
   },
   "gumuskasa": {
     "price": 6,
-    "currency": "ruby",
+    "currency": "gem",
     "type": "crate"
   },
   "altinkasa": {
     "price": 9,
-    "currency": "ruby",
+    "currency": "gem",
     "type": "crate"
   }
 }

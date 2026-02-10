@@ -1,9 +1,10 @@
 {
-  "cuzdan": { "name": "Cüzdan", "emoji": "<:cuzdan:1469017634950480097>" },
+  "cuzdan": { "name": "Cüzdan", "emoji": "<:cuzdan:1470775924214468731>" },
   "canta": { "name": "Kitler", "emoji": "<:canta:1469018374930698240>" },
   "envanterkasa": { "name": "Kasalar", "emoji": "<:envanterkasa:1469403053097619578>" },
   "pgmcoin": { "name": "PGM Coin", "emoji": "<:pgmcoin:1469015534493368442>" },
   "ruby": { "name": "Yakut", "emoji": "<:ruby:1469015535911178280>" },
+  "gem": { "name": "Cevher", "emoji": "<:pgmgem:1470767961831637144>" },
   "diamond": { "name": "Elmas", "emoji": "<:diamond:1469015532836491274>" },
   "crystal": { "name": "Kristal", "emoji": "<:crystal:1469015530760569058>" },
   "bronzkasa": { "name": "Bronz Kasa", "emoji": "<:bronzkasa:1469400728442245347>" },

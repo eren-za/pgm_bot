@@ -1,7 +1,7 @@
 const { loadJson, saveJson, ensureUser } = require("../../utils/dataManager");
 const { getLang } = require("../../utils/formatter");
 
-const CURRENCIES = ["pgmcoin", "ruby", "diamond"];
+const CURRENCIES = ["pgmcoin", "gem"];
 
 module.exports = {
     name: "!send",

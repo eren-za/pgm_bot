@@ -31,7 +31,7 @@ module.exports = {
             }).join("\n")
             : "_Kasa bulunmuyor._";
 
-        const walletList = ["pgmcoin", "ruby", "diamond"].map(c => {
+        const walletList = ["pgmcoin", "gem", "diamond"].map(c => {
             const info = getLang(c);
             return `${info.emoji} **${info.name}**: ${p[c]}`;
         }).join("\n");

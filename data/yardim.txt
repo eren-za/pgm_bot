@@ -1,21 +1,21 @@
-## :blue_book: PGM BOT • Yardım
+# <:yardim:1470785405375746201> PGM BOT // Yardım
+## Birimler
+- <:pgmcoin:1469015534493368442> **PGM Coin** `pgmcoin` → Sunucunun ana ekonomik birimi. Kit satın almak için kullanabilirsin.
+- <:pgmgem:1470767961831637144> **Cevher** `gem` → Nadir birim, kasa satın almak için kullanabilirsin.
+- <:diamond:1469015532836491274> **Elmas** `diamond` → Sezona özel birim, sezon marketinde kullanabilirsin.
+- <:bronzkasa:1469400728442245347> **Bronz Kasa** `bronzkasa` // <:gumuskasa:1469400730589724828> **Gümüş Kasa** `gumuskasa` // <:altinkasa:1469400726043361443> **Altın Kasa** `altinkasa`
 ## Genel Komutlar
-- :blue_square: `!envanter` → Envanterini göster.
-- :blue_square: `!market` → Marketi görüntüle.
-  - ***Kitler ve kasalar için önce markete göz at!***
-- :blue_square: `!satinal <kit>` → Kit satın al.
-  - ***!satinal nisanci***
-  - *Kitler tek kullanımlıktır.*
-- :blue_square: `!gonder <@kullanici> <miktar> <oge>` → Herhangi birine birim gönder.
-  - *PGM Coin, yakut, kasa veya kit gönderebilirsin.*
-  - ***!gonder <@1088510460778782831> 100 pgmcoin***
+- <:cuzdan:1470775924214468731> `!envanter` → Envanterini aç.
+- <:market:1470780692144328714> `!market` → Marketi görüntüle.
+- <:pgmcoin:1469015534493368442> `!gonder <@kullanici> <miktar> <birim>` → Birine herhangi bir birim gönder.
+*Örnek: **!gonder @BayPGM 8 pgmcoin***
 ## Kasa Komutları
-- :blue_square: `!satinal <kasa>` → Kasa satın al.
-  - ***!satinal gumuskasa***
-- :blue_square: `!kasa <kasa>` → Envanterindeki kasayı aç.
-  - ***!kasa gumuskasa***
-## Turnuva Komutları
-- :blue_square: `!katil <mc_adi> <kit>` → Turnuvaya katıl. *(kit ile)*
-  - ***!katil BayPGM nisanci***
-- :blue_square: `!katil <mc_adi> yok` → Turnuvaya katıl. *(kitsiz)*
-  - ***Katılım yaptıktan sonra kit harcanır, bu işlemi geri alamazsın.***
+- <:envanterkasa:1469403053097619578> `!satinal <kasa>` → Marketten yeni bir kasa al.
+- <:envanterkasa:1469403053097619578> `!kasa <kasa>` → Envanterindeki kasayı aç.
+*Örnek: **!kasa altinkasa***
+## Turnuva Katılımı ve Kit Komutları
+- <:market:1470780692144328714> `!satinal <kit>` → Kit satın al.
+- <:kit:1469016921478266880> `!katil <mc_adi> yok` → Turnuvaya kitsiz katıl.
+- <:canta:1469018374930698240> `!katil <mc_adi> <kit>` → Turnuvaya seçtiğin kit ile katıl.
+*Örnek: **!katil BayPGM madenci***
+*Not: Kit ile katılımda kit envanterinden düşer ve geri alınamaz.*
