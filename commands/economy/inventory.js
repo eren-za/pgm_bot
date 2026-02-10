@@ -4,7 +4,7 @@ const { getLang } = require("../../utils/formatter");
 
 module.exports = {
     name: "!envanter",
-    aliases: ["!inv", "!canta", "!profile", "!e"],
+    aliases: ["!e"],
     execute(client, msg, args) {
         const user = msg.mentions.users.first() || msg.author;
         const data = loadJson("data.json");
@@ -31,7 +31,7 @@ module.exports = {
             }).join("\n")
             : "_Kasa bulunmuyor._";
 
-        const walletList = ["pgmcoin", "gem", "diamond"].map(c => {
+        const walletList = ["pgmcoin", "cevher", "elmas"].map(c => {
             const info = getLang(c);
             return `${info.emoji} **${info.name}**: ${p[c]}`;
         }).join("\n");

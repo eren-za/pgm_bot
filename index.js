@@ -20,7 +20,6 @@ const client = new Client({
 
 client.commands = new Collection();
 
-// --- Komut Yükleyici (Command Handler) ---
 const commandFolders = fs.readdirSync("./commands");
 
 for (const folder of commandFolders) {
@@ -29,7 +28,6 @@ for (const folder of commandFolders) {
         const command = require(`./commands/${folder}/${file}`);
         client.commands.set(command.name, command);
         
-        // Takma adları (aliases) yükle
         if (command.aliases) {
             command.aliases.forEach(alias => client.commands.set(alias, command));
         }
@@ -39,8 +37,8 @@ for (const folder of commandFolders) {
 client.on("clientReady", () => {
     console.log(`✅ Bot giriş yaptı: ${client.user.tag}`);
     client.user.setPresence({
-        activities: [{ name: '"!yardim" kullan! • PGM BOT', type: ActivityType.Custom }],
-        status: 'online',
+        activities: [{ name: '"!yardim" kullan! // PGM BOT', type: ActivityType.Custom }],
+        status: 'idle',
     });
 });
 
@@ -50,7 +48,6 @@ client.on("messageCreate", (msg) => {
     const args = msg.content.trim().split(/\s+/);
     const commandName = args.shift()?.toLowerCase();
 
-    // Komut var mı kontrol et
     const command = client.commands.get(commandName);
     if (!command) return;
 

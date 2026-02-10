@@ -14,19 +14,19 @@
     "currency": "pgmcoin",
     "type": "kit"
   },
-  "bronzkasa": {
+  "bronz": {
     "price": 3,
-    "currency": "gem",
+    "currency": "cevher",
     "type": "crate"
   },
-  "gumuskasa": {
+  "gumus": {
     "price": 6,
-    "currency": "gem",
+    "currency": "cevher",
     "type": "crate"
   },
-  "altinkasa": {
+  "altin": {
     "price": 9,
-    "currency": "gem",
+    "currency": "cevher",
     "type": "crate"
   }
 }

@@ -2,7 +2,7 @@ const { PermissionFlagsBits } = require("discord.js");
 const { loadJson, saveJson, ensureUser } = require("../../utils/dataManager");
 const { getLang } = require("../../utils/formatter"); 
 
-const CURRENCIES = ["pgmcoin", "gem", "diamond", "crystal"];
+const CURRENCIES = ["pgmcoin", "cevher", "elmas"];
 
 module.exports = {
     name: "!add",
