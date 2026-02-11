@@ -1,9 +1,9 @@
 process.on('unhandledRejection', (reason) => {
-    console.error('⚠️ Unhandled Rejection:', reason);
+    console.error('⚠️ [HATA] Yakalanamayan Reddetme:', reason);
 });
 
 process.on('uncaughtException', (err) => {
-    console.error('⚠️ Uncaught Exception:', err);
+    console.error('⚠️ [HATA] Beklenmedik İstisna:', err);
 });
 
 require("dotenv").config();
@@ -15,13 +15,13 @@ const client = new Client({
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
-        GatewayIntentBits.GuildMembers // !add everyone veya üye sayısını çekmek için bu GEREKLİDİR.
+        GatewayIntentBits.GuildMembers 
     ]
 });
 
 client.commands = new Collection();
 
-// Komut Yükleme İşlemi (Geliştirilmiş)
+// Komut Yükleme İşlemi
 const commandFolders = fs.readdirSync("./commands");
 
 console.log('📂 Komutlar yükleniyor...');
@@ -37,41 +37,50 @@ for (const folder of commandFolders) {
         if (command.aliases && Array.isArray(command.aliases)) {
             command.aliases.forEach(alias => client.commands.set(alias, command));
         }
-        console.log(`✅ Yüklendi: ${command.name}`);
     }
 }
+console.log('✅ Tüm komutlar başarıyla belleğe alındı.');
 
-// "clientReady" HATALIDIR, v14'te "ready" kullanılır.
-client.once("ready", () => {
-    console.log(`\n🚀 PGM BOT Çevrimiçi!`);
-    console.log(`🤖 Bot Tagı: ${client.user.tag}`);
+// "ready" uyarısını çözmek için "clientReady" kullanıyoruz
+client.once("clientReady", (c) => {
+    console.log(`\n---------------------------------`);
+    console.log(`🚀 PGM BOT Çevrimiçi!`);
+    console.log(`🤖 Bot: ${c.user.tag}`);
+    console.log(`📅 Tarih: ${new Date().toLocaleString('tr-TR')}`);
+    console.log(`---------------------------------\n`);
     
     client.user.setPresence({
         activities: [{ 
             name: 'custom', 
             type: ActivityType.Custom, 
-            state: '🛠️ "!yardim" | PGM BOT v1.0' 
+            state: '🛠️ "!yardim" // PGM BOT v0.38.1' 
         }],
-        status: 'idle',
+        status: 'online',
     });
 });
 
 client.on("messageCreate", async (msg) => {
+    // Botları ve DM mesajlarını yoksay
     if (msg.author.bot || !msg.guild) return;
 
-    // Mesaj içeriğini parçalara ayır
-    const args = msg.content.trim().split(/\s+/);
-    const commandName = args.shift()?.toLowerCase();
+    // Mesajın komut olup olmadığını kontrol et (Örn: ! ile başlıyorsa)
+    if (!msg.content.startsWith("!")) return;
+
+    const args = msg.content.slice(1).trim().split(/\s+/);
+    const commandName = "!" + args.shift()?.toLowerCase();
 
     // Komutu bul
     const command = client.commands.get(commandName);
     if (!command) return;
 
+    // Komut kullanım logu (Kimin ne kullandığını terminalde gör)
+    console.log(`[KOMUT] ${msg.author.tag}: ${commandName} ${args.join(" ")}`);
+
     try {
         await command.execute(client, msg, args);
     } catch (error) {
         console.error(`❌ Komut Hatası (${commandName}):`, error);
-        msg.reply("Bu komutu çalıştırırken sistemsel bir hata oluştu.");
+        msg.reply("Bu komutu çalıştırırken sistemsel bir hata oluştu. Lütfen geliştiriciye bildirin.");
     }
 });
 

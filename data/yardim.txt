@@ -3,7 +3,6 @@
 - <:pgmcoin:1469015534493368442> **PGM Coin** `pgmcoin` → Sunucunun ana ekonomik birimi. Kit satın almak için kullanabilirsin.
 - <:pgmgem:1470767961831637144> **Cevher** `cevher` → Nadir birim, kasa satın almak için kullanabilirsin.
 - <:diamond:1469015532836491274> **Elmas** `elmas` → Sezona özel birim, sezon marketinde kullanabilirsin.
-- <:bronzkasa:1469400728442245347> **Bronz Kasa** `bronz` // <:gumuskasa:1469400730589724828> **Gümüş Kasa** `gumus` // <:altinkasa:1469400726043361443> **Altın Kasa** `altin`
 ## Genel Komutlar
 - <:pgmgem:1470767961831637144> `!günlük` → Günlük ödüllerinden birini al. (6 saatte yenilenir.)
 - <:cuzdan:1470834247496372317> `!envanter` → Envanterini aç.
