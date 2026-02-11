@@ -1,64 +1,71 @@
 const { PermissionFlagsBits } = require("discord.js");
 const { loadJson, saveJson, ensureUser } = require("../../utils/dataManager");
+const { getItemInfo, isValidItem } = require("../../utils/itemManager");
 const { getLang } = require("../../utils/formatter");
-
-const CURRENCIES = ["pgmcoin", "cevher", "elmas"];
 
 module.exports = {
     name: "!set",
-    aliases: ["!ayarla", "!sabitle"],
+    aliases: ["!ayarla"],
     execute(client, msg, args) {
         const check = getLang("check").emoji;
         const negative = getLang("negative").emoji;
 
+        // Yetki Kontrolü
         if (!msg.member.permissions.has(PermissionFlagsBits.ManageGuild)) {
             return msg.reply(`${negative} Bu komut için yetkin yok.`);
         }
 
         const user = msg.mentions.users.first();
         const amount = parseInt(args[1]);
-        const target = args[2]?.toLowerCase();
+        const targetKey = args[2]?.toLowerCase();
 
-        if (!user || isNaN(amount) || !target) {
+        // Girdi Kontrolü
+        if (!user || isNaN(amount) || !targetKey) {
             return msg.reply(`${negative} Kullanım: \`!set @user <miktar> <birim>\``);
         }
 
+        // Merkezi Sistem Kontrolü
+        if (!isValidItem(targetKey)) {
+            return msg.reply(`${negative} **${targetKey}** adında geçerli bir birim/eşya bulunamadı.`);
+        }
+
         const data = loadJson("data.json");
-        const market = loadJson("market.json");
-        const loot = loadJson("loot.json");
-        const info = getLang(target);
+        const item = getItemInfo(targetKey);
         
         ensureUser(data, user.id);
+        const p = data[user.id];
 
-        if (CURRENCIES.includes(target)) {
-            data[user.id][target] = amount < 0 ? 0 : amount;
-            saveJson("data.json", data);
-            msg.reply(`${check} **${user.username}** kullanıcısının **${info.emoji} ${info.name}** miktarı **${data[user.id][target]}** olarak ayarlandı.`);
-        }
-        else if (loot[target]) {
-            if (!data[user.id].crates) data[user.id].crates = {};
+        // Eşya Tipine Göre Ayarlama İşlemi
+        if (item.type === "currency") {
+            // Cüzdan birimi ayarlama
+            p[targetKey] = amount < 0 ? 0 : amount;
+        } 
+        else if (item.type === "crate") {
+            // Kasa ayarlama
+            if (!p.crates) p.crates = {};
             if (amount <= 0) {
-                delete data[user.id].crates[target];
-                msg.reply(`${check} **${user.username}** kullanıcısının **${info.emoji} ${info.name}** eşyaları sıfırlandı.`);
+                delete p.crates[targetKey];
             } else {
-                data[user.id].crates[target] = amount;
-                msg.reply(`${check} **${user.username}** kullanıcısının **${info.emoji} ${info.name}** miktarı **${amount}** olarak ayarlandı.`);
+                p.crates[targetKey] = amount;
             }
-            saveJson("data.json", data);
-        }
-        else if (market[target]) {
-            if (!data[user.id].kits) data[user.id].kits = {};
+        } 
+        else if (item.type === "kit") {
+            // Kit ayarlama
+            if (!p.kits) p.kits = {};
             if (amount <= 0) {
-                delete data[user.id].kits[target];
-                msg.reply(`${check} **${user.username}** kullanıcısının **${info.emoji} ${info.name}** eşyaları sıfırlandı.`);
+                delete p.kits[targetKey];
             } else {
-                data[user.id].kits[target] = amount;
-                msg.reply(`${check} **${user.username}** kullanıcısının **${info.emoji} ${info.name}** miktarı **${amount}** olarak ayarlandı.`);
+                p.kits[targetKey] = amount;
             }
-            saveJson("data.json", data);
         }
-        else {
-            msg.reply(`${negative} **${target}** adında geçerli bir birim bulunamadı.`);
+
+        saveJson("data.json", data);
+
+        // Bilgilendirme Mesajı
+        if (amount <= 0 && item.type !== "currency") {
+            msg.reply(`${check} **${user.username}** kullanıcısının **${item.emoji} ${item.name}** eşyaları sıfırlandı.`);
+        } else {
+            msg.reply(`${check} **${user.username}** kullanıcısının **${item.emoji} ${item.name}** miktarı **${amount}** olarak ayarlandı.`);
         }
     }
 };

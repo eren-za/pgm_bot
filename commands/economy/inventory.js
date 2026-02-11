@@ -1,10 +1,11 @@
 const { EmbedBuilder } = require("discord.js");
 const { loadJson, saveJson, ensureUser } = require("../../utils/dataManager");
 const { getLang } = require("../../utils/formatter");
+const { getItemInfo, getItemsByType } = require("../../utils/itemManager");
 
 module.exports = {
     name: "!envanter",
-    aliases: ["!e"],
+    aliases: ["!e", "!inv", "!profile"],
     execute(client, msg, args) {
         const user = msg.mentions.users.first() || msg.author;
         const data = loadJson("data.json");
@@ -17,24 +18,29 @@ module.exports = {
         const cantaInfo = getLang("canta");
         const envKasaInfo = getLang("envanterkasa");
 
-        const kitList = Object.entries(p.kits).length > 0
+        // 1. Dinamik Cüzdan Listesi (items.json'daki 'currency' tipindekileri çeker)
+        const currencies = getItemsByType("currency");
+        const walletList = Object.keys(currencies).map(c => {
+            const info = getItemInfo(c);
+            const balance = p[c] || 0;
+            return `${info.emoji} **${info.name}**: ${balance}`;
+        }).join("\n");
+
+        // 2. Kit Listesi (Sadece envanterde olanlarý gösterir)
+        const kitList = (p.kits && Object.entries(p.kits).length > 0)
             ? Object.entries(p.kits).map(([k, v]) => {
-                const info = getLang(k);
+                const info = getItemInfo(k) || getLang(k);
                 return `${info.emoji} **${info.name}** (x${v})`;
             }).join("\n")
             : "_Kit bulunmuyor._";
 
+        // 3. Kasa Listesi (Sadece envanterde olanlarý gösterir)
         const crateList = (p.crates && Object.entries(p.crates).length > 0)
             ? Object.entries(p.crates).map(([k, v]) => {
-                const info = getLang(k);
+                const info = getItemInfo(k) || getLang(k);
                 return `${info.emoji} **${info.name}** (x${v})`;
             }).join("\n")
             : "_Kasa bulunmuyor._";
-
-        const walletList = ["pgmcoin", "cevher", "elmas"].map(c => {
-            const info = getLang(c);
-            return `${info.emoji} **${info.name}**: ${p[c]}`;
-        }).join("\n");
 
         let descriptionContent = `## ${cuzdanInfo.emoji} ${cuzdanInfo.name}\n${walletList}\n`;
         descriptionContent += `## ${envKasaInfo.emoji} ${envKasaInfo.name}\n${crateList}\n`;

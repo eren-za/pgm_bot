@@ -5,17 +5,18 @@
 - <:diamond:1469015532836491274> **Elmas** `elmas` → Sezona özel birim, sezon marketinde kullanabilirsin.
 - <:bronzkasa:1469400728442245347> **Bronz Kasa** `bronz` // <:gumuskasa:1469400730589724828> **Gümüş Kasa** `gumus` // <:altinkasa:1469400726043361443> **Altın Kasa** `altin`
 ## Genel Komutlar
+- <:pgmgem:1470767961831637144> `!günlük` → Günlük ödüllerinden birini al. (6 saatte yenilenir.)
 - <:cuzdan:1470834247496372317> `!envanter` → Envanterini aç.
 - <:market:1470780692144328714> `!market` → Marketi görüntüle.
-- <:pgmcoin:1469015534493368442> `!gonder <@kullanici> <miktar> <birim>` → Birine herhangi bir birim gönder.
-*Örnek: **!gonder @BayPGM 8 pgmcoin***
+- <:pgmcoin:1469015534493368442> `!gönder <@kullanıcı> <miktar> <birim>` → Birine herhangi bir birim gönder.
+*Örnek: **!gönder @BayPGM 8 pgmcoin***
 ## Kasa Komutları
-- <:market:1470780692144328714> `!satinal <kasa>` → Marketten yeni bir kasa al.
+- <:market:1470780692144328714> `!satınal <kasa>` → Marketten yeni bir kasa al.
 - <:envanterkasa:1469403053097619578> `!kasa <kasa>` → Envanterindeki kasayı aç.
 *Örnek: **!kasa altinkasa***
 ## Turnuva Katılımı ve Kit Komutları
-- <:market:1470780692144328714> `!satinal <kit>` → Kit satın al.
-- <:kit:1469016921478266880> `!katil <mc_adi> yok` → Turnuvaya kitsiz katıl.
-- <:canta:1469018374930698240> `!katil <mc_adi> <kit>` → Turnuvaya seçtiğin kit ile katıl.
-*Örnek: **!katil BayPGM madenci***
+- <:market:1470780692144328714> `!satınal <kit>` → Kit satın al.
+- <:kit:1469016921478266880> `!katıl <mc_adi> yok` → Turnuvaya kitsiz katıl.
+- <:canta:1469018374930698240> `!katıl <mc_adi> <kit>` → Turnuvaya seçtiğin kit ile katıl.
+*Örnek: **!katıl BayPGM madenci***
 *Not: Kit ile katılımda kit envanterinden düşer ve geri alınamaz.*

@@ -14,7 +14,7 @@ function createProgressBar(current, total, size = 10) {
 
 module.exports = {
     name: "!ping",
-    aliases: ["!gecikme", "!durum", "!stats", "!i", "!sys"],
+    aliases: ["!i" ,"!info"],
     description: "Gelişmiş sistem monitörü ve bot istatistikleri.",
     async execute(client, msg, args) {
         const sent = await msg.channel.send("🔄 **Veriler toplanıyor...**");

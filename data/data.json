@@ -1,17 +1,12 @@
 {
   "1088510460778782831": {
-    "pgmcoin": 99999999,
-    "cevher": 99999999,
-    "elmas": 99999999,
     "kits": {
-      "madenci": 99999999,
-      "demirci": 99999999,
-      "nisanci": 99999999
+      "nisanci": 2
     },
-    "crates": {
-      "bronz": 99999999,
-      "altin": 99999999,
-      "gumus": 99999999
-    }
+    "crates": {},
+    "pgmcoin": 100001,
+    "cevher": 99986,
+    "elmas": 0,
+    "lastDaily": 1770836422566
   }
 }

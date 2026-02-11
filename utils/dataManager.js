@@ -38,22 +38,39 @@ function loadText(filename, fallback = "İçerik bulunamadı.") {
     return fs.readFileSync(filePath, "utf8");
 }
 
+/**
+ * Kullanıcı verisini merkezi sisteme göre hazırlar.
+ * items.json içindeki tüm 'currency' tipindeki birimleri otomatik olarak 0 bakiye ile ekler.
+ */
 function ensureUser(data, userId) {
+    // items.json dosyasını yükle (Para birimlerini dinamik çekmek için)
+    // Not: Döngüsel bağımlılığı önlemek için itemManager yerine doğrudan buradan yüklüyoruz.
+    const itemsPath = getFilePath("items.json");
+    let items = {};
+    if (fs.existsSync(itemsPath)) {
+        items = JSON.parse(fs.readFileSync(itemsPath, "utf8"));
+    }
+
     if (!data[userId]) {
         data[userId] = {
-            pgmcoin: 0,
-            cevher: 0,
-            elmas: 0,
             kits: {},
             crates: {}
         };
-    } else {
-        if (data[userId].pgmcoin === undefined) data[userId].pgmcoin = 0;
-        if (data[userId].cevher === undefined) data[userId].cevher = 0;
-        if (data[userId].elmas === undefined) data[userId].elmas = 0;
-        if (!data[userId].kits) data[userId].kits = {};
-        if (!data[userId].crates) data[userId].crates = {};
     }
+
+    // items.json içindeki her bir currency (para birimi) için kontrol yap
+    for (const [key, item] of Object.entries(items)) {
+        if (item.type === "currency") {
+            if (data[userId][key] === undefined) {
+                data[userId][key] = 0;
+            }
+        }
+    }
+
+    // Temel objelerin varlığını garanti et
+    if (!data[userId].kits) data[userId].kits = {};
+    if (!data[userId].crates) data[userId].crates = {};
+
     return data;
 }
 
