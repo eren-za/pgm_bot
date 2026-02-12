@@ -1,12 +1,12 @@
 {
   "1088510460778782831": {
     "kits": {
-      "nisanci": 2
+      "madenci": 1
     },
     "crates": {},
-    "pgmcoin": 100001,
-    "cevher": 99986,
+    "pgmcoin": 100000014,
+    "cevher": 99999993,
     "elmas": 0,
-    "lastDaily": 1770836422566
+    "lastDaily": 1770921279255
   }
 }

@@ -1,16 +1,16 @@
 {
   "madenci": {
-    "price": 20,
+    "price": 30,
     "currency": "pgmcoin",
     "type": "kit"
   },
   "nisanci": {
-    "price": 20,
+    "price": 30,
     "currency": "pgmcoin",
     "type": "kit"
   },
   "demirci": {
-    "price": 20,
+    "price": 30,
     "currency": "pgmcoin",
     "type": "kit"
   },

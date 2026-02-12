@@ -5,7 +5,7 @@ const { getItemInfo, isValidItem, getItemsByType } = require("../../utils/itemMa
 
 module.exports = {
     name: "!kasa",
-    aliases: ["!open", "!kasaac", "!kasaaç"],
+    aliases: ["!open", "!kasaac", "!kasaaç", "!kasaç"],
     execute(client, msg, args) {
         const crateType = args[0]?.toLowerCase();
         const negative = getLang("negative").emoji;
